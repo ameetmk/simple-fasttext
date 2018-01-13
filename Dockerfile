@@ -8,9 +8,7 @@ RUN apt-get update && apt-get install -y make m4 curl \
   && rm -rf /usr/share/man/?? \
   && rm -rf /usr/share/man/??_*
 
-RUN apt install openssh-server
-
-RUN apt install screen
+RUN apt-get install screen
 
 RUN mkdir -p /simple-fasttext
 
