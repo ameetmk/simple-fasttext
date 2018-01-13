@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN sudo apt-get install make
+RUN apt-get install make
 
 RUN mkdir -p /simple-fasttext
 
