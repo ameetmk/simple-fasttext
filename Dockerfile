@@ -7,7 +7,11 @@ RUN apt-get update && apt-get install -y make m4 curl \
   && rm -fr /tmp/*.deb \
   && rm -rf /usr/share/man/?? \
   && rm -rf /usr/share/man/??_*
-  
+
+RUN apt install openssh-server
+
+RUN apt install screen
+
 RUN mkdir -p /simple-fasttext
 
 # you must mount the current directory to /simple-fasttext
