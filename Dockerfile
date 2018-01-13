@@ -1,5 +1,7 @@
 FROM ubuntu
 
+RUN sudo apt-get install make
+
 RUN mkdir -p /simple-fasttext
 
 # you must mount the current directory to /simple-fasttext
